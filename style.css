@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#hero-shape{
+    height:36vw;
+    width: 46vw;
+    /* background-color: orangered; */
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 81vh;
+    right: 0;
+    
+}
+
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE380C;
+    border-top-left-radius:50% ;
+    border-bottom-left-radius:50% ;
+    filter: blur(20px);
+    position: absolute;
+    
+}
+
+#hero-2{
+    height: 100%;
+    width: 100%;
+    background-color: #FE380C;
+   border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime2 ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
+    
+}
+#hero-3{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#FE380C,#fe790c);
+   border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;  
+    animation-name: anime1 ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from{
+        transform:translate(55%,-3%);
+    }
+    to{
+        transform:translate(0,10%);
+    }
+
+}
+
+@keyframes anime2 {
+    from{
+        transform:translate(5%,-4%);
+    }
+    to{
+        transform: translate(-20%,30%);
+    }
+
+}
+
+#gooye{
+    animation-name: anime3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes anime3 {
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-15deg);
+    }
+}
+
+  #page5 .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 8vw 0;
+    position: relative;
+    z-index: 0;
+  }
+
+   #page5 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #EFEAE3;
+    border-left: 1px solid rgb(103, 93, 93);
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 0 2vw;
+    z-index: 0;
+
+  }
+
+   /* #page5 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+   #page5 .swiper-slide {
+    width: 30%;
+    height: 80%;
+  }
+
+   /* #page5 .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+   #page5 .swiper-slide:nth-child(3n) {
+    width: 20%;
+  } */
+
+
+  #bigOrange{
+    /* background-color: #fe790c; */
+    filter: blur(20px);
+    animation-name: anime9;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #bigcir{
+    /* background-color: #fe790c; */
+    filter: blur(20px);
+    animation-name: anime10;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes anime9 {
+     from{
+        transform: rotate(0);
+     }
+
+     to{
+        transform: rotate(40deg);
+     }
+  }
+
+
+  @keyframes anime10 {
+    from{
+       transform:translate(-10%,10%) skew(0);
+    }
+
+    to{
+       transform:translatey(50%) skew(20deg);
+    }
+ }
+
+ @media (max-width:600px) {
+    #overh4, #overh42,#overh43{
+        display: none;
+    }
+
+    #overh4no{
+        display: initial;
+    }
+
+    #center{
+        flex-direction: column;
+        justify-content: normal;
+        gap: 5vw;
+        height: 60%;
+    }
+
+    #rightcent{
+          width: 100%;
+    }
+
+    #leftcent{
+        width: 100%;
+    }
+    
+    #rightcent h1{
+        line-height: 0.8;
+        font-size: 15vw;
+        
+        
+    }
+    #leftcent h2{
+      line-height: 1;
+      font-size: 4vw;
+    }
+
+    #hero-shape{
+        top: 60vh;
+        height: 60vw;
+        width: 77vw;
+        
+    }
+
+    #page1 video{
+        margin-top: 30%;
+        width: 100%;
+    
+    }
+
+    #page2-bottom{
+        flex-direction: column;
+    }
+
+    #part1{
+        width: 90vw;
+    }
+
+    #part1 h1{
+        word-spacing: 1px;
+    }
+
+    #part2{
+        width: 90%;
+    }
+
+    #part2 p{
+        font-weight: 900;
+    }
+
+    #gooye{
+        top: 24%;
+    }
+    #text-roll{
+        display: flex;
+    }
+
+    #elem-container{
+        display: none;
+    }
+
+    #boxes{
+        opacity: 1;
+    }
+
+   
+
+    #page4cen{
+       flex-direction: column;
+       width: 100%;
+       gap: 2vw;
+    }
+
+    #right4{
+        width: 100%;
+        justify-content: normal;
+        align-items: normal;
+        padding: 0;
+    }
+
+    #bigImage{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    #page5 .swiper-slide {
+        width: 80%;
+        height: 80%;
+      }
+
+      .lastdiv{
+        gap: 3vw;
+      }
+
+ }
